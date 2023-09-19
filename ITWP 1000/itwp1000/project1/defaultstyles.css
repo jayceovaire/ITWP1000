@@ -1,0 +1,149 @@
+/* body */
+body {
+    background-color: rgb(95, 255, 140);
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation List*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem 0 0;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    font-size: 2rem;
+}
+
+nav a {
+    margin: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #c02a3c;
+}
+
+main {
+    margin: 8rem;
+}
+
+/* Article container */
+
+.articleContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    margin: 1rem;
+}
+
+.articleContainer div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.articleContainer div ul {
+    padding-left: 0;
+}
+
+/* article image */
+.articleContainer img {
+    border-radius: 5%;
+}
+
+
+/* article */
+.articleContainer div p {
+    display: flex;
+    text-align: left;
+}
+
+
+.articleContainer div h1 {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    text-align: left;
+    padding-top: .5rem;
+}
+
+
+@media (max-width: 1160px) {
+    .articleContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .futuramaMovie {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #futuramaPoster {
+        display: flex;
+        margin:0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .articleContainer figure figcaption {
+        display: none;
+    }
+
+    #links {
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #futuramaPoster {
+        display: none;
+    }
+    .articleContainer {
+        justify-content: center;
+    }
+
+    #links {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 600px) {
+    #tickleMeBender{
+        align-self: center;
+    }
+}
+
+#tickleMeBender {
+    width: 6rem;
+    height: 8.5rem;
+    background-image: url('images/tickleMeBender.png');
+    background-size: cover;
+}
+
+/*footer*/
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
