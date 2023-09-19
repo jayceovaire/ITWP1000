@@ -142,6 +142,10 @@ main {
     background-size: cover;
 }
 
+#tickleMeBender:hover{
+    cursor: pointer;
+}
+
 /*footer*/
 footer {
     margin-top: 2rem;
